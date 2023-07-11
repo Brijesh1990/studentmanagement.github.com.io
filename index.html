@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- script files -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+new DataTable('#examples');
+})
+
+</script>
+</head>
+<body>
+<!-- HEADER ADD HERE -->
+<section id="header">
+    <div class="row">
+    <div class="call-us col-md-3 p-2 mt-2">
+        <span class="bi bi-phone"></span> &nbsp;(+91)9998003879
+    </div>
+    <div class="search-us col-md-6 p-2 mt-2">
+        <div class="input-group">
+            <input type="text" name="search" placeholder="search anything here"  class="form-control">
+        </div>
+    </div>
+    <div class="social-media col-md-2 p-2 mt-3">
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-whatsapp"></span>
+        <span class="bi bi-snapchat"></span>
+        <span class="bi bi-youtube"></span>
+
+        <button type="button" class="btn btn-sm btn-primary ms-3"> <span class="bi bi-cart">0</span></button>
+
+    </div>
+</div>
+</section>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-md nav bg-primary p-1">
+<a href="#" class="navbar-brand text-white ms-5">Student management systems</a>
+
+<!-- add toggler -->
+<button type="button" class="navbar-toggler btn btn-lg fs-2 text-white" data-bs-toggle="collapse" data-bs-target="#togg">
+<i class="bi bi-grid-3x3-gap"></i>
+</button>
+<div class="collapse navbar-collapse" id="togg">
+<ul class="navbar-link">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="manage.html">Manage student</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="#">Feedback</a></li>
+<li class="dropdown"><a data-bs-toggle="dropdown" class="dropdown-toggle"  href="#"><span class="bi bi-person-add"> Account</span></a>
+
+<ul class="dropdown-menu bg-primary">
+<li><a href="#">SignIn</a></li>
+<li><a href="#">SignUp</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</nav>
+
+
+<!-- banner section or sliders -->
+<div id="carouselExampleIndicators" class="carousel slide mt-3 container" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slider1.webp" class="d-block w-100" alt="..." style="width:100%; height: 350px;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider2.jpg" class="d-block w-100" alt="..." style="width:100%; height: 350px;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider3.jpg" class="d-block w-100" alt="..." style="width:100%; height: 350px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- content here -->
+<div class="container-fluid mt-5 p-5">
+
+<!---enrolled yourself--  -->
+<h1 class="text-center text-primary">50% of on selected course Hurry Up!</h1>
+<hr class="border border-1 border-primary w-50 mx-auto">
+
+<div class="row">
+    <div class="col-md-3 m-5">
+        <img src="images/slider1.webp" class="img-fluid rounded-circle" style="width: 350px; height: 300px;">
+    </div>
+
+    <div class="col-md-3 m-5">
+        <img src="images/slider2.jpg" class="img-fluid rounded-circle" style="width: 350px; height: 300px;">
+    </div>
+
+    <div class="col-md-3 m-5">
+        <img src="images/slider3.jpg" class="img-fluid rounded-circle" style="width: 350px; height: 300px;">
+    </div>
+</div>
+<!-- add course in cart -->
+<div class="row">
+    <div class="col-md-3 mt-5">
+    <ul class="sidebar-link">
+    <li><a href="#" class="text-primary"><h3>Course category</h3></a></li>
+    <li><a href="#">Technical courses</a></li>
+    <li><a href="#">Non-technical courses</a></li>
+    <li><a href="#">c language</a></li>
+    <li><a href="#">c++ language</a></li>
+ 
+    </ul>
+    </div>
+    
+    <div class="col-md-9">
+    <h3 class="text-primary">Add course in Cart</h3>
+    <hr class="border border-1 border-primary w-75">
+    
+    <button type="button" class="btn btn-sm btn-primary"><span class="bi bi-backspace fs-5"></span>&nbsp;Back</button>
+    
+    
+    <button type="button" class="btn btn-sm btn-primary">&nbsp;Next &nbsp;<span class="bi bi-backspace-reverse fs-5"></span></button>
+    
+    <div class="mt-5">
+     
+    <div class="row">
+        <div class="col-md-3 m-3 p-3 shadow mt-2">
+            <img src="images/laravel.png" class="img-fluid" style="width: 100%; height: 160px;">
+            <p><b>course: </b>Laravel certified course</p>
+            <p><b>Duration:</b> 4 to 5 months</p>
+            <p><b>Fees: </b>Rs.35500</p>
+            <p><button type="button" class="btn btn-sm btn-primary">AddToCart</button></p>
+        </div>
+
+        <div class="col-md-3 m-3 p-3 shadow mt-2">
+            <img src="images/wordpress.png" class="img-fluid" style="width: 100%; height: 160px;">
+            <p><b>course: </b>Laravel certified course</p>
+            <p><b>Duration:</b> 4 to 5 months</p>
+            <p><b>Fees: </b>Rs.35500</p>
+            <p><button type="button" class="btn btn-sm btn-primary">AddToCart</button></p>
+        </div>
+
+        <div class="col-md-3 m-3 p-3 shadow mt-2">
+            <img src="images/react.png" class="img-fluid" style="width: 100%; height: 160px;">
+            <p><b>course: </b>Laravel certified course</p>
+            <p><b>Duration:</b> 4 to 5 months</p>
+            <p><b>Fees: </b>Rs.35500</p>
+            <p><button type="button" class="btn btn-sm btn-primary">AddToCart</button></p>
+        </div>
+    </div>    
+
+
+
+    </div>
+
+</div>
+</div>
+</div>
+    
+
+
+</div>
+
+<!-- footer -->
+
+<section id="footer" class="bg-primary p-5">
+<div class="row">
+<div class="col-md-4">
+<ul class="footer-link">
+<li><a href="#"><h3>Navbar Links</h3></a></li>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<ul class="footer-link">
+<li><a href="#"><h3>Our services</h3></a></li>
+<li><a href="#">24x7 support</a></li>
+<li><a href="#">Privacy & policy</a></li>
+<li><a href="#">Refund policy</a></li>
+<li><a href="#">chat with customers</a></li>
+<li><a href="#">Call us</a></li>
+</ul>
+</div>
+
+
+<div class="col-md-4">
+<ul class="footer-link">
+<li><a href="#"><h3>Subscribe Our Newsletter</h3></a></li>
+<li><a href="#">
+<input type="text" name="email" placeholder="Enter Your Email for subscribe *" class="form-control">
+</a></li>
+<li><a href="#">contact with us</a></li>
+<li><a href="#"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6768121719374!2d70.77229007412227!3d22.290229143262646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1688808705682!5m2!1sen!2sin" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a></li>
+
+</ul>
+</div>
+</div>  
+<p class="ms-5 text-white">copyright@2015-2023 all right reserved certified company</p>
+</section>
+<!-- add student Modal -->
+<div class="modal fade" id="addstudent" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content p-5">
+<h3>Add Your Card <button type="button" class="btn btn-sm btn-danger float-end" data-bs-dismiss="modal">&times;</button></h3>
+<hr class="border border-1 border-dark">
+<form method="post">
+<div class="input-group mt-3">
+<input type="text" name="name" placeholder="Name *" required class="form-control">
+</div>
+
+<div class="input-group mt-3">
+<input type="text" name="studentid" placeholder="StudentId *" required class="form-control">
+</div>
+
+<div class="input-group mt-3">
+<input type="text" name="phone" placeholder="Phone *" required class="form-control">
+</div>
+
+
+<div class="input-group mt-3">
+<input type="text" name="staffid" placeholder="Staffid *" required class="form-control">
+</div>
+
+
+
+<div class="input-group mt-3">
+<textarea name="address" placeholder="Address *" required class="form-control"></textarea>
+</div>
+
+
+<div class="input-group mt-3">
+<input type="submit" name="sub" value="Add Card" class="btn btn-md btn-primary text-white">
+<input type="reset" name="reset" value="Reset" class="btn btn-md btn-danger text-white ms-2">
+
+</div>
+</form>
+
+
+
+</div>
+
+</div>    
+</div>
+
+
+<!-- Logout Modal Modal -->
+<div class="modal fade" id="log" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content p-5">
+<h3 class="text-center p-3">Are you sure to logout ?</h3>
+
+<div class="input-group mt-3">
+
+<div class="col-md-5 mx-auto">
+<h1 class="text-center text-danger fs-2">&times;</h1>   
+<button type="button" name="sub"  class="btn btn-md btn-success text-white">OK</button>
+<button type="button" name="cancel" class="btn btn-md btn-danger text-white ms-3" data-bs-dismiss="modal">Cancel</button>
+</div>
+
+
+</div>
+</form>
+
+</div>
+</div>    
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#header 
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+.navbar-link
+{
+    margin-left: 25%;
+}
+.navbar-link li 
+{
+    display: inline-block;
+}
+.navbar-link a 
+{
+    color: white;
+    padding: 2px 15px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+.sidebar-link li 
+{
+    
+    display: block;
+    padding: 2px 5px;
+
+}
+
+.sidebar-link a 
+{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+.footer-link li 
+{
+    display: block;
+    padding: 2px 5px;
+
+}
+.footer-link a 
+{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media only screen and  (max-width:480px){
+
+    .navbar-link li 
+{
+    display:block;
+}
+.navbar-link
+{
+    margin-left: 0%;
+}
+.carousel-item img
+{
+    width: 100%;
+    height: 200px !important;
+} 
+}
